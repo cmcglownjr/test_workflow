@@ -1,0 +1,9 @@
+on: [push]
+jobs:
+  test:
+    runs-on: docker
+    steps:
+      - uses: actions/checkout@v4
+        with:
+            ref: main
+      - run: echo All Good

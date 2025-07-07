@@ -1,0 +1,7 @@
+on: [push]
+jobs:
+  test_docker:
+    runs-on: docker
+    steps:
+      - run: pwd
+        shell: sh
