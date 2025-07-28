@@ -1,9 +1,9 @@
 on: [push]
 jobs:
   test:
-    runs-on: docker
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
-            ref: main
+          ref: main
       - run: echo All Good

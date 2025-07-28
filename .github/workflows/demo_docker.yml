@@ -1,7 +1,7 @@
 on: [push]
 jobs:
-  test_docker:
-    runs-on: docker
+  test_ubuntu:
+    runs-on: ubuntu-latest
     steps:
       - run: pwd
         shell: sh
